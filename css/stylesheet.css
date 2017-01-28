@@ -148,8 +148,8 @@ footer p {
 .card-small .btn-buy:hover {
   background-color: #1b97ff;
   color: #eee;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
 
 html, body {
