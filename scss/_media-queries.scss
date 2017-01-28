@@ -1,0 +1,46 @@
+/* ----- MEDIA QUERIES ------ */
+
+
+/* -- BREAK 1 -- */
+@media only screen and (max-width: 1000px) {
+
+
+  body {
+      background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../images/back-mobile.jpg') right fixed no-repeat;
+      background-size: cover;
+  }
+
+  .header-content {padding: 0 20px;}
+
+  .card-holder {
+      display: block;
+      width:    100%;
+      padding:     0;
+  }
+
+  .card, .card-small {
+      display:       block;
+      width:         320px;
+      margin:    40px auto;
+      padding-bottom: 40px;
+
+      .btn-buy {
+          width:      200px;
+          font-size:   18px;
+          line-height: 18px;
+      }
+  }
+}
+
+
+/* -- BREAK 2 -- */
+@media only screen and (max-width: 400px) {
+
+
+  .card-holder {
+      display: block;
+      width:    100%;
+  }
+
+  .card, .card-small {width: 90%;}
+}

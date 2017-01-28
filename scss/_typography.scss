@@ -1,0 +1,102 @@
+* {
+    text-rendering:  optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing:  grayscale;
+}
+
+a {
+    color: $link;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    transition: all 0.5s ease;
+}
+
+a:hover, .active {
+    color: $brand;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 24px;
+    color: rgba(56, 58, 63, 1.0);
+    font-weight: 600;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 32px;
+    color: $brand;
+    font-weight: 300;
+    padding-bottom: 0.2em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+    color: rgba(43, 150, 239, 1.0);
+    font-size: 85px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+
+    span {
+        font-size: 14px;
+        font-weight: 200;
+    }
+}
+
+h4 {
+    color: rgba(180, 180, 180, 1.0);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+p {
+    font-size: 18px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+li {
+    color: $brand;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.card-small {
+    h2 {
+        font-size: 28px;
+        color: $brand;
+        font-weight: 300;
+        padding-bottom: 0.1em;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    h3 {
+        color: rgba(43, 150, 239, 1.0);
+        font-size: 62px;
+        font-weight: 400;
+        font-family: 'Open Sans', sans-serif;
+
+        span {
+            font-size: 12px;
+            font-weight: 200;
+        }
+    }
+}
+
+
+footer {
+
+  p{
+    font-size: 15px;
+    color: rgba(121, 121, 121, 1.0);
+    font-family: 'Open Sans', sans-serif;
+    }
+}

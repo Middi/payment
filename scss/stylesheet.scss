@@ -1,0 +1,160 @@
+/* ----- STYLESHEET ----- */
+
+/* IMPORTS */
+@import "normalise";
+@import "colors";
+@import "typography";
+@import "buttons";
+
+html, body {height: 100%;}
+
+
+body {
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6) ),
+    url('../images/back.jpg') fixed no-repeat;
+    background-size: cover;
+}
+
+main {
+    width:          100%;
+    text-align:   center;
+    min-height:     100%;
+    margin-bottom: -32px;
+}
+
+nav {
+    padding:      20px;
+    text-align: center;
+    margin-left:  auto;
+    margin-right: auto;
+}
+
+.logo {
+    text-align: center;
+    margin-left:  auto;
+    margin-right: auto;
+}
+
+.header-content {
+    max-width:   750px;
+    margin-left:  auto;
+    margin-right: auto;
+}
+
+.card-holder {
+    display:         flex;
+    align-content:  center;
+    vertical-align: middle;
+    width:          1000px;
+    margin-left:      auto;
+    margin-right:     auto;
+    padding:     20px 60px;
+    margin-bottom:    60px;
+}
+
+.card {
+    width:            320px;
+    height:            auto;
+    background-color: white;
+    display:         inline;
+    margin:            40px;
+    margin-left:       auto;
+    margin-right:      auto;
+    padding-bottom:    40px;
+    text-align:      center;
+    border:  1px solid #ddd;
+    border-radius:     10px;
+    z-index:              1;
+    box-shadow: 0 4px 8px 0 $shadow, 0 6px 20px 0 $shadow;
+}
+
+ul {
+    margin-top:      20px;
+    padding:         20px;
+    display: inline-block;
+}
+
+li {
+    display:            block;
+    text-align:        center;
+    max-width:          220px;
+    word-break:     break-all;
+    vertical-align:       top;
+    list-style-type:     none;
+    text-transform: uppercase;
+    background: url("../images/tick.png") 0 12px no-repeat;
+    background-size:   18px 18px;
+    padding: 10px 20px 10px 30px;
+}
+
+hr {
+    margin:   0;
+    width: 100%;
+}
+
+.card-small {
+    display:  inline-block;
+    align-self:     center;
+    width:           280px;
+    height:          490px;
+    text-align:     center;
+    border: 1px solid #ddd;
+    border-radius:    10px;
+    box-shadow: 0 4px 8px 0 $shadow, 0 6px 20px 0 $shadow;
+}
+
+.card-muted {
+    position: relative;
+    background:   #eee;
+    z-index:         0;
+
+    h2, h3, li {color: desaturate($brand, 100);}
+
+    li {
+        background: url("../images/tick-muted.png") 0 12px no-repeat;
+        background-size: 18px 18px;
+    }
+
+    hr {
+        border: solid 0.1px;
+        margin:           0;
+        color:         #ddd;
+        background:    #ccc;
+    }
+
+    .btn-buy, .btn-buy:hover {
+        background: desaturate($brand, 100);
+        color:            darken(white, 10);
+        pointer-events:                none;
+        cursor:                     default;
+    }
+}
+
+.coming-soon {
+    position: absolute;
+    top:          -1px;
+    right:        -1px;
+    height:      300px;
+    width:       250px;
+    background: url('../images/coming.png') no-repeat top right;
+    background-size: 120px;
+}
+
+
+/* --- FOOTER --- */
+
+main:after {
+    content:    "";
+    display: block;
+}
+
+footer, main:after {
+    padding:        6px;
+    height:        40px;
+    color:         #bbb;
+    background: $footer;
+}
+
+@import "media-queries";
