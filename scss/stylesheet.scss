@@ -70,6 +70,8 @@ nav {
     box-shadow: 0 4px 8px 0 $shadow, 0 6px 20px 0 $shadow;
 }
 
+.card-title {border-bottom: 1px solid #ddd;}
+
 ul {
     margin-top:      20px;
     padding:         20px;
@@ -87,12 +89,10 @@ li {
     background: url("../images/tick.png") 0 12px no-repeat;
     background-size:   18px 18px;
     padding: 10px 20px 10px 30px;
+    border-bottom: 1px solid #ddd;
 }
 
-hr {
-    margin:   0;
-    width: 100%;
-}
+li:nth-last-child(1) {border: none;}
 
 .card-small {
     display:  inline-block;
@@ -115,13 +115,6 @@ hr {
     li {
         background: url("../images/tick-muted.png") 0 12px no-repeat;
         background-size: 18px 18px;
-    }
-
-    hr {
-        border: solid 0.1px;
-        margin:           0;
-        color:         #ddd;
-        background:    #ccc;
     }
 
     .btn-buy, .btn-buy:hover {

@@ -218,6 +218,10 @@ nav {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
+.card-title {
+  border-bottom: 1px solid #ddd;
+}
+
 ul {
   margin-top: 20px;
   padding: 20px;
@@ -235,11 +239,11 @@ li {
   background: url("../images/tick.png") 0 12px no-repeat;
   background-size: 18px 18px;
   padding: 10px 20px 10px 30px;
+  border-bottom: 1px solid #ddd;
 }
 
-hr {
-  margin: 0;
-  width: 100%;
+li:nth-last-child(1) {
+  border: none;
 }
 
 .card-small {
@@ -268,13 +272,6 @@ hr {
 .card-muted li {
   background: url("../images/tick-muted.png") 0 12px no-repeat;
   background-size: 18px 18px;
-}
-
-.card-muted hr {
-  border: solid 0.1px;
-  margin: 0;
-  color: #ddd;
-  background: #ccc;
 }
 
 .card-muted .btn-buy, .card-muted .btn-buy:hover {
